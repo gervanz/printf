@@ -12,7 +12,6 @@ int (*check_format(const char *format))(va_list)
 	print_t p[] = {
 		{"c", print_chr},
 		{"s", print_str},
-		{"%", print_perc},
 		{"d", print_dec},
 		{"i", print_int},
 		{NULL, NULL}

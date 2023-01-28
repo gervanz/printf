@@ -37,19 +37,7 @@ int print_str(va_list s)
 }
 
 /* ------------------------- PRINT % ------------------------- */
-/**
- * print_perc - Prints a %
- * Return: Percent
- */
-int print_perc(va_list s)
-{
-	char *str = va_arg(s, char *);
 
-	if (str == NULL)
-                str = "(null)";
-
-	return (write(1, "%%", 1));
-}
 
 /* ------------------------- PRINT DECIMAL ------------------------- */
 /**

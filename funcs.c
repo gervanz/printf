@@ -37,14 +37,7 @@ int print_str(va_list s)
 }
 
 /* ------------------------- PRINT % ------------------------- */
-/**
- * print_perc - Prints a %
- * Return: Percent
- */
-int print_perc(void)
-{
-	return (write(1, "%%", 1));
-}
+
 
 /* ------------------------- PRINT DECIMAL ------------------------- */
 /**
