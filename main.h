@@ -19,7 +19,7 @@ int (*check_format(const char *format))(va_list);
 int _putchar(char c);
 int print_chr(va_list c);
 int print_str(va_list s);
-int print_perc();
+int print_perc(void);
 int print_dec(va_list i);
 int print_int(va_list i);
 
