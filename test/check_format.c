@@ -8,20 +8,20 @@
  */
 int (*check_format(const char *format))(va_list)
 {
-        int i = 0;
-        print_t p[] = {
-                {"c", print_chr},
-                {"s", print_str},
+	int i = 0;
+	print_t p[] = {
+		{"c", print_chr},
+		{"s", print_str},
 		{"%", print_perc},
-                {"d", print_dec},
-                {"i", print_int},
-                {NULL, NULL}
-        };
+		{"d", print_dec},
+		{"i", print_int},
+		{NULL, NULL}
+	};
 
-        for (; p[i].t != NULL; i++)
-        {
-                if (*(p[i].t) == *format)
-                        break;
-        }
-        return (p[i].f);
+	for (; p[i].t != NULL; i++)
+	{
+		if (*(p[i].t) == *format)
+			break;
+	}
+	return (p[i].f);
 }
