@@ -3,6 +3,8 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+#define UNUSED(x) (void)(x)
+
 /**
  * struct print - structure for printing various types
  * @t: type to print
@@ -19,7 +21,7 @@ int (*check_format(const char *format))(va_list);
 int _putchar(char c);
 int print_chr(va_list c);
 int print_str(va_list s);
-/*int print_perc(va_list s);*/
+int print_perc(va_list types);
 int print_dec(va_list i);
 int print_int(va_list i);
 
