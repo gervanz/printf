@@ -21,8 +21,12 @@ int (*check_format(const char *format))(va_list);
 int _putchar(char c);
 int print_chr(va_list c);
 int print_str(va_list s);
-int print_perc(va_list types);
 int print_dec(va_list i);
 int print_int(va_list i);
+int print_bin(va_list b);
+int print_unsgnd(va_list u);
+int print_oct(va_list o);
+int print_hex(va_list x);
+int print_HEX(va_list X);
 
 #endif  /* _MAIN_H */

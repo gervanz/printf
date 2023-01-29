@@ -37,17 +37,7 @@ int print_str(va_list s)
 }
 
 /* ------------------------- PRINT % ------------------------- */
-/**
- * print_percent - Prints a percent sign
- * @types: Lista of arguments
- * Return: Printout
- */
-int print_perc(va_list types)
-{
-	UNUSED(types);
 
-	return (write(1, "%%", 1));
-}
 
 /* ------------------------- PRINT DECIMAL ------------------------- */
 /**
