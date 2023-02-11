@@ -28,5 +28,9 @@ int print_unsgnd(va_list u);
 int print_oct(va_list o);
 int print_hex(va_list x);
 int print_HEX(va_list X);
+int print_ptr(va_list p);
+int print_rev(va_list r);
+int print_rot(va_list R);
+int print_sym(va_list S);
 
 #endif  /* _MAIN_H */

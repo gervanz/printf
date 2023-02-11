@@ -19,6 +19,10 @@ int (*check_format(const char *format))(va_list)
 		{"o", print_oct},
 		{"x", print_hex},
 		{"X", print_HEX},
+		{"p", print_ptr},
+		{"r", print_rev},
+		{"R", print_rot},
+		{"S", print_sym},
 		{NULL, NULL}
 	};
 
